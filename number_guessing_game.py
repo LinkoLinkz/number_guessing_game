@@ -12,7 +12,7 @@ print("Welcome to the guessing game! Please input a range when asked and the mac
 # range input
 A = int(input("Please choose the starting number of the range: "))
 B = int(input("Please choose the ending number of the range: "))
-
+# range
 print(f"You have picked the range {A}-{B}")
 # random library
 random_num = random.randint(A, B)
@@ -27,11 +27,11 @@ while guess != random_num:
         print("That is too high! Guess again")
     elif guess < random_num:
         print("That is too low! Guess again")
-
+# number of guesses
     print(f"Total number of guesses: {num_of_guesses}")
 
     num_of_guesses += 1
     guess = int(input("Please enter a guess: "))
-
+# congratulations message
 print("Congratulations, you have won!")
 print(f"Total number of guesses: {num_of_guesses}")
