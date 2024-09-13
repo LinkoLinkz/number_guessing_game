@@ -19,31 +19,23 @@ random_num = random.randint(A, B)
 # num_of_guesses
 num_of_guesses = 0
 
-While True:
-    guess = int(input("Please enter your first guess: "))
-    num_of_guesses += 1
+guess = int(input("Please enter a guess: "))
+num_of_guesses += 1
 
-    if guess == random_num
-        print("Congratulations, you have won!")
-        print(f"Total number of guesses: {num_of_guesses}")
-        break
-
-print(f"Total number of guesses: {num_of_guesses}")
-
-
-
-
-
-
-
-while guess not random_num:
+while guess != random_num:
 
     if guess > random_num:
         print("That is too high! Guess again")
-        print(f"Total number of guesses: {input_count}")
+        print(f"Total number of guesses: {num_of_guesses}")
+        guess = int(input("Please enter a guess: "))
     elif guess < random_num:
         print("That is too low! Guess again")
-        print(f"Total number of guesses: {input_count}")
-    else:
+        print(f"Total number of guesses: {num_of_guesses}")
+        guess = int(input("Please enter a guess: "))
+    elif guess == random_num:
         print("Congratulations, you have won!")
-        print(f"Total number of guesses: {input_count}")
+        print(f"Total number of guesses: {num_of_guesses}")
+        guess = int(input("Please enter a guess: "))
+    else:
+        print("Please type a number within the range")
+        break
